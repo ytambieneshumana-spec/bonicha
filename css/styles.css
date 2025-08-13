@@ -323,3 +323,16 @@ footer {
   color: #333;
   font-size: 14px;
 }
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: underline;
+}
