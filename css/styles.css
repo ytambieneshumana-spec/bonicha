@@ -1,4 +1,140 @@
-/* styles.css para Casa Bonicha - ADAPTADO PARA BOOTSTRAP */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", "Cormorant Garamond", serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+h1, h2, h3 {
+  font-family: "Quentin", "Cormorant Garamond", serif;
+  color: #333;
+}
+
+a {
+  font-family: "Work Sans", "Cormorant Garamond", serif;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #6c5ce7;
+}
+a:focus {
+  outline: 2px solid #6c5ce7;
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  background-color: rgb(253, 222, 222);
+  padding: 1rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+header nav ul li a {
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  color: #ff69b4;
+}
+
+footer {
+  background: #d9b8b8;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer p {
+  margin: 0;
+}
+
+.productos {
+  padding: 1rem;
+}
+.productos h2 {
+  margin: 2rem 0 1rem;
+}
+.productos .grid-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.productos .producto-card {
+  border: 1px solid #d9b8b8;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+.productos .producto-card h3 {
+  color: #d9b8b8;
+}
+.productos .producto-card:hover {
+  background-color: #927d7d;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .productos .grid-productos {
+    grid-template-columns: 1fr;
+  }
+}
+
+.talleres {
+  padding: 2rem;
+}
+.talleres .card {
+  border: none;
+  background-color: rgb(243.6697247706, 233.8302752294, 233.8302752294);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.talleres .card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.page {
+  padding: 2rem;
+}
+.page--contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.page--contacto form input, .page--contacto form textarea {
+  padding: 0.75rem;
+  border: 1px solid #d9b8b8;
+  border-radius: 8px;
+}
+.page--contacto form button {
+  background: #d9b8b8;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.page--contacto form button:hover {
+  background: #ff69b4;
+}
+
 /* RESET BÁSICO */
 * {
   margin: 0;
@@ -7,14 +143,14 @@
 }
 
 @font-face {
-  font-family: 'Quentin';
-  src: url('../assets/fonts/Quentin.otf') format('truetype');
+  font-family: "Quentin";
+  src: url("../assets/fonts/Quentin.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 /* Tipografías y estilos base */
 body {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -22,7 +158,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Quentin', 'Cormorant Garamond', serif;
+  font-family: "Quentin", "Cormorant Garamond", serif;
 }
 
 a {
@@ -59,7 +195,7 @@ a {
 .nav-link {
   font-family: "Work Sans", sans-serif;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   color: #333;
   transition: all 0.3s ease;
 }
@@ -68,8 +204,6 @@ a {
   color: #000;
   border-bottom: 2px solid #6c5ce7;
 }
-
-
 
 img {
   max-width: 100%;
@@ -168,7 +302,7 @@ p {
 .subtitulo {
   font-family: "Work Sans", "Cormorant Garamond", Arial, sans-serif;
   font-weight: 400;
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 
@@ -194,7 +328,7 @@ p {
 .bloque img {
   background-color: #ddd;
   height: 180px;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: block;
 }
 
@@ -204,7 +338,7 @@ form {
   text-align: center;
 }
 
-input[type="email"] {
+input[type=email] {
   padding: 8px;
   width: 250px;
   margin: 10px;
@@ -212,8 +346,8 @@ input[type="email"] {
   border-radius: 5px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   margin-right: 5px;
 }
 
@@ -280,14 +414,14 @@ button:hover {
   padding: 15px;
   width: 250px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .producto-card img {
   height: 160px;
   background-color: #ccc;
   margin-bottom: 10px;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: block;
 }
 
@@ -337,3 +471,5 @@ footer a {
   color: #333;
   text-decoration: underline;
 }
+
+/*# sourceMappingURL=styles.css.map */

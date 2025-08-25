@@ -1,0 +1,29 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+header {
+  background-color: $color-primary;
+  padding: $padding-base;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+
+      li {
+        a {
+          font-weight: 500;
+
+          &:hover {
+            color: $rosa-hover;
+          }
+        }
+      }
+    }
+  }
+}

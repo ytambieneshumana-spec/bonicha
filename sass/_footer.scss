@@ -1,0 +1,13 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+footer {
+  background: $rosa-principal;
+  padding: $padding-base;
+  text-align: center;
+  font-size: 0.9rem;
+
+  p {
+    margin: 0;
+  }
+}

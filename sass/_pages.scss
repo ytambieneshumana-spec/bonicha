@@ -1,0 +1,31 @@
+@use "variables" as *;
+@use "mixins" as *;
+.page {
+  padding: 2rem;
+
+  &--contacto {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input, textarea {
+        padding: 0.75rem;
+        border: 1px solid $rosa-principal;
+        border-radius: $border-radius;
+      }
+
+      button {
+        background: $rosa-principal;
+        border: none;
+        padding: 0.75rem;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:hover {
+          background: $rosa-hover;
+        }
+      }
+    }
+  }
+}

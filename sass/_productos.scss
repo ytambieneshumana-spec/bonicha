@@ -1,0 +1,37 @@
+@use "variables" as *;
+@use "mixins" as *;
+.productos {
+  padding: $padding-base;
+
+  h2 {
+    margin: 2rem 0 1rem;
+  }
+
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .producto-card {
+    border: 1px solid $rosa-principal;
+    border-radius: $border-radius;
+    padding: $padding-base;
+    text-align: center;
+
+    h3 {
+      color: $rosa-principal;
+    }
+
+    &:hover {
+      background-color: $color-gris;
+      color: $blanco;
+    }
+  }
+
+  @include movil {
+    .grid-productos {
+      grid-template-columns: 1fr;
+    }
+  }
+}
