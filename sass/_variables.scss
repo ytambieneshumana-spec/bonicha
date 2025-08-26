@@ -1,27 +1,35 @@
 
 // Variables globales
+// =======================
 
-// Colores
-$color-primary: rgb(253, 222, 222);
-$color-secondary: #6c5ce7;
-$color-text: #333;
-$color-background: #f9f9f9;
-$rosa-principal:#d9b8b8;
-$color-gris: #927d7d;
+// Colores principales
+$color-primario: #fddede;   // Rosa Bonicha
+$color-secundario: #dbeeee; // Celeste claro
+$color-acento: #f7c5cc;     // Rosa suave para detalles
+$color-texto: #333333;
+$color-texto-claro: #666666;
+$color-blanco: #ffffff;
+$color-negro: #000000;
 
-// Blanco
-$blanco: #ffffff; 
+// Gradientes
+$gradient-hero: linear-gradient(135deg, $color-primario, $color-acento);
 
-// Hover
-$rosa-hover: #ff69b4;  
-
-// Tipografías
-$fuente-texto: "Work Sans", "Cormorant Garamond", serif;
-$fuente-titulos: "Quentin", "Cormorant Garamond", serif;
+// Tipografía
+$font-base: 'Arial', sans-serif;
+$font-titulos: 'Georgia', serif;
 
 // Espaciados
-$spacing-small: 8px;
-$spacing-medium: 16px;
-$spacing-large: 32px;
-$padding-base: 1rem; 
-$border-radius: 8px;
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 48px;
+
+// Sombras
+$shadow-suave: 0 2px 5px rgba(0, 0, 0, 0.1);
+$shadow-medio: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+// Bordes
+$border-radius-sm: 4px;
+$border-radius-md: 10px;
+$border-radius-lg: 20px;

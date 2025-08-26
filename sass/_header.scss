@@ -2,25 +2,46 @@
 @use "mixins" as *;
 
 header {
-  background-color: $color-primary;
-  padding: $padding-base;
+  background-color: $color-primario;
+  box-shadow: $shadow-suave;
+  padding: $spacing-md 0;
 
-  nav {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
+    .navbar-brand {
+      font-family: $font-titulos;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $color-texto;
 
-      li {
-        a {
-          font-weight: 500;
+      &:hover {
+        color: $color-acento;
+      }
+    }
+
+    .nav {
+      display: flex;
+      gap: $spacing-md;
+
+      .nav-item {
+        list-style: none;
+
+        .nav-link {
+          color: $color-texto;
+          font-size: 1rem;
+          text-decoration: none;
+          transition: color 0.3s ease;
 
           &:hover {
-            color: $rosa-hover;
+            color: $color-acento;
+          }
+
+          &.active {
+            font-weight: bold;
+            color: $color-acento;
           }
         }
       }

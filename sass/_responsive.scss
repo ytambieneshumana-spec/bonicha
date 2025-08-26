@@ -1,0 +1,110 @@
+// =======================
+// RESPONSIVE DESIGN
+
+
+// Breakpoints principales
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-large: 1200px;
+
+
+// NAVBAR / HEADER
+
+@media (max-width: $bp-tablet) {
+  header {
+    padding: 10px;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 8px 0;
+    text-align: center;
+  }
+}
+
+
+// PRESENTACIÓN / HERO
+
+@media (max-width: $bp-mobile) {
+  .hero-image img {
+    width: 180px; // más chico en móviles
+  }
+
+  .presentacion h1 {
+    font-size: 22px;
+  }
+
+  .presentacion h2 {
+    font-size: 16px;
+  }
+}
+
+
+// UNIVERSO BONICHA
+
+@media (max-width: $bp-tablet) {
+  .bloques {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloque {
+    width: 90%;
+  }
+
+  .bloque img {
+    height: auto;
+  }
+}
+
+
+// PRODUCTOS
+
+@media (max-width: $bp-tablet) {
+  .grid-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-card {
+    width: 90%;
+  }
+}
+
+
+// FORMULARIOS
+
+@media (max-width: $bp-mobile) {
+  form input[type="email"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
+// DOS COLUMNAS (Sobre Bonicha)
+
+@media (max-width: $bp-tablet) {
+  .contenido-dos-columnas {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .columna-imagen img {
+    width: 100%;
+  }
+}
+
+
+// FOOTER
+
+@media (max-width: $bp-mobile) {
+  footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

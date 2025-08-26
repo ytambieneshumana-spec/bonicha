@@ -10,3 +10,15 @@
     @content;
   }
 }
+@mixin zoom($scale: 1.2, $duration: 6s) {
+  animation: zoomIn $duration ease-in-out infinite alternate;
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale($scale);
+    }
+  }
+}

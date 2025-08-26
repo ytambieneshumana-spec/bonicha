@@ -1,51 +1,29 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-// ===============================
-// Estilos base
-// ===============================
 
-// Reset básico
-* {
+// Estilos BASE
+
+body {
+  font-family: $font-base;
+  font-size: 16px;
+  background-color: $color-fondo;
+  color: $color-texto;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-// Tipografía global
-body {
-  font-family: $fuente-texto; 
-  background-color: $color-background;
-  color: $color-text;
-  line-height: 1.6;
-  padding-top: 80px; // Ajustar según altura del header
-}
-
-// Jerarquía de títulos
-h1, h2, h3 {
-  font-family: $fuente-titulos;
-  color: $color-text;
-}
-
-// Enlaces
 a {
-  font-family: $fuente-texto;
-  color: $color-text;
+  color: $color-acento;
   text-decoration: none;
-  transition: color 0.3s ease;
 
   &:hover {
-    color: $color-secondary;
-  }
-
-  &:focus {
-    outline: 2px solid $color-secondary;
-    outline-offset: 2px;
+    text-decoration: underline;
   }
 }
 
-// Imágenes
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }

@@ -2,17 +2,53 @@
 @use "mixins" as *;
 @use "sass:color";
 
+
+// TALLERES
+
 .talleres {
-  padding: 2rem;
+  padding: $spacing-xl 0;
+  background-color: $color-secundario;
 
-  .card {
-    border: none;
-    background-color: color.adjust($rosa-principal, $lightness: 15%);
-    padding: 1.5rem;
-    border-radius: $border-radius;
+  h2 {
+    text-align: center;
+    font-family: $font-titulos;
+    margin-bottom: $spacing-lg;
+    color: $color-blanco;
+  }
 
-    h3 {
-      margin-bottom: 0.5rem;
+  .talleres-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-lg;
+    justify-content: center;
+
+    .taller-card {
+      background: $color-blanco;
+      border-radius: $radius-md;
+      padding: $spacing-md;
+      box-shadow: $shadow-suave;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        margin-bottom: $spacing-sm;
+        font-size: 1.2rem;
+        color: $color-texto;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: $color-texto;
+      }
+
+      .btn {
+        margin-top: $spacing-md;
+      }
     }
   }
 }

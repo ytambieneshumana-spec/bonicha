@@ -1,0 +1,58 @@
+
+// FORMULARIOS
+
+
+// Estilos generales de formularios
+form {
+  margin-top: 20px;
+  text-align: center;
+
+  label {
+    display: block;
+    margin: 8px 0;
+  }
+
+  input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  button {
+    padding: 8px 16px;
+    background-color: $color-secundario; // usa tu variable de color
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-secundario, 10%);
+    }
+  }
+}
+
+// Formularios específicos
+.formulario-talleres,
+.contacto-boletin {
+  background-color: #dbeeee;
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-align: center;
+
+  .form-extra,
+  .campo-email {
+    margin-top: 20px;
+  }
+}

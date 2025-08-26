@@ -3,12 +3,17 @@
 @use "mixins" as *;
 
 // Estilos base y componentes
-@use 'base';
-@use 'header';
-@use 'footer';
-@use 'productos';
-@use 'talleres';
-@use 'pages';
+@use "base";
+@use "header";
+@use "footer";
+@use "productos";
+@use "talleres";
+@use "pages";
+@use "hero";
+@use "forms";
+@use "responsive";
+
+
 
 /* RESET BÁSICO */
 * {
@@ -209,59 +214,6 @@ p {
   display: block;
 }
 
-/* FORMULARIOS */
-form {
-  margin-top: 20px;
-  text-align: center;
-}
-
-input[type="email"] {
-  padding: 8px;
-  width: 250px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  margin-right: 5px;
-}
-
-button {
-  padding: 8px 16px;
-  background-color: #6c5ce7;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-button:hover {
-  background-color: #5a4cd2;
-}
-
-.formulario-talleres,
-.contacto-boletin {
-  background-color: #dbeeee;
-  padding: 30px 20px;
-  max-width: 600px;
-  margin: 10px auto;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.formulario-talleres label,
-.contacto-boletin label {
-  display: block;
-  margin: 8px 0;
-}
-
-.formulario-talleres .form-extra,
-.contacto-boletin .campo-email {
-  margin-top: 20px;
-}
 
 /* PRODUCTOS */
 .productos {

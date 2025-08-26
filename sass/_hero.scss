@@ -1,0 +1,26 @@
+.hero-image {
+  text-align: center;
+  overflow: hidden; // evita que se desborde
+
+  img {
+    width: 250px;
+    border-radius: 12px;
+    animation: zoomIn 6s ease-in-out infinite alternate;
+  }
+}
+
+.hero-image img {
+  width: 250px;
+  border-radius: 12px;
+  @include zoom(1.2, 6s);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
