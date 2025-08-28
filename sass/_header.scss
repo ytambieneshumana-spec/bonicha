@@ -1,6 +1,7 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+
 /* ---------- Header ---------- */
 header {
   position: fixed;
@@ -21,7 +22,10 @@ header {
     display: block;
     align-items: center;
   }
-
+.navbar-brand img {
+  height: 80px; 
+  width: auto;
+}
   nav ul {
     list-style: none;
     display: flex;

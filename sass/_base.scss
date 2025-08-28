@@ -11,8 +11,12 @@ body {
   color: $color-texto;
   margin: 0;
   padding: 0;
+  padding-top: 100px; // depende de la altura de tu header
 }
 
+main {
+  padding-top: 10px; // ✅ altura del header
+}
 a {
   color: $color-acento;
   text-decoration: none;
@@ -27,6 +31,4 @@ img {
   height: auto;
   display: block;
 }
-main {
-  padding-top: 10px; // ✅ altura del header
-}
+
