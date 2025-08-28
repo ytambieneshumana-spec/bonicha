@@ -1,4 +1,6 @@
-
+@use "variables" as *;
+@use "mixins" as *;
+@use "sass:color";
 // FORMULARIOS
 
 
@@ -36,7 +38,8 @@ form {
     cursor: pointer;
 
     &:hover {
-      background-color: darken($color-secundario, 10%);
+      background-color: color.scale($color-secundario, $lightness: -11.16%);
+      background-color: color.adjust($color-secundario, $lightness: -10%);
     }
   }
 }

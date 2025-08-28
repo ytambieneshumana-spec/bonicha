@@ -1,26 +1,32 @@
-.hero-image {
-  text-align: center;
-  overflow: hidden; // evita que se desborde
-
-  img {
-    width: 250px;
-    border-radius: 12px;
-    animation: zoomIn 6s ease-in-out infinite alternate;
-  }
+@use "variables" as *;
+@use "mixins" as *;
+.hero {
+  position: relative;
+  height: 250px; 
+  background-image: url('../assets/img/bonichaani2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  animation: zoomHero 10s ease-in-out infinite alternate;
 }
 
-.hero-image img {
-  width: 250px;
-  border-radius: 12px;
-  @include zoom(1.2, 6s);
-}
-
-@keyframes zoomIn {
+@keyframes zoomHero {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; // asegurate de que el texto sea visible
+}
+
+
+
 

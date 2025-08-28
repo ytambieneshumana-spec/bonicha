@@ -7,7 +7,7 @@
 body {
   font-family: $font-base;
   font-size: 16px;
-  background-color: $color-fondo;
+  background-color: $color-secundario;
   color: $color-texto;
   margin: 0;
   padding: 0;
@@ -26,4 +26,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+main {
+  padding-top: 10px; // ✅ altura del header
 }
