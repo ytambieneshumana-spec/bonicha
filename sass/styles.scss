@@ -1,4 +1,4 @@
-// Variables y mixins primero
+// Variables y mixins
 @use "variables" as *;
 @use "mixins" as *;
 
@@ -115,7 +115,7 @@ h1 {
 
 h2 {
   font-family: "Cormorant Garamond", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h3 {
