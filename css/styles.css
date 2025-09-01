@@ -1,27 +1,20 @@
 @charset "UTF-8";
+html, body {
+  height: 100%;
+  margin: 0;
+}
 body {
-  font-family: "Cormorant Garamond", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 16px;
+  color: #333;
   background-color: #dbeeee;
-  color: #333333;
-  margin: 0;
-  padding: 0;
-  padding-top: 100px;
-  height: 100%;
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  padding-top: 100px; /* ajusta según tu header */
 }
 main {
-  padding-top: 10px;
   flex: 1;
-
 }
 
 a {
@@ -80,7 +73,6 @@ header nav ul li a:hover {
 /* ---------- Hero ---------- */
 .hero {
   margin-top: 80px;
-  height: 70vh;
   background-image: url("../assets/img/bonichaani2.jpg");
   background-size: cover;
   background-position: center;
@@ -135,13 +127,12 @@ header nav ul li a:hover {
   }
 }
 footer {
-  background-color: #dbeeee;
-  padding: 24px 0;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666666;
-   margin-top: auto;
+  background-color: #eee;
+  color: #333;
+  font-size: 14px;
+  margin-top: auto;
 }
+
 footer .footer-content {
   max-width: 1200px;
   margin: 0 auto;
