@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ytambieneshumana-spec.github.io/bonicha/sitemap.xml
